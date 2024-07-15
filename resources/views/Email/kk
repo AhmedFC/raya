@@ -1,0 +1,16 @@
+@component('mail::message')
+
+
+    <h3>{{ $details['title'] }}</h3>
+    <h3>{{ $details['body'] }}</h3>
+
+    @component('mail::button', ['url' => 'http://localhost:4200/response-password-reset?token='.$token])
+        Button Text
+    @endcomponent
+
+    Thanks,<br>
+    {{ config('app.name') }}
+@endcomponent
+
+
+<a href="http://localhost:4200/response-password-reset?token=Q2xWju0783aOa5Jj3FFoi7IcO4KGQBsYn5HQVLi9" rel="noopener" style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';border-radius:4px;color:#fff;display:inline-block;overflow:hidden;text-decoration:none;background-color:#2d3748;border-bottom:8px solid #2d3748;border-left:18px solid #2d3748;border-right:18px solid #2d3748;border-top:8px solid #2d3748" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://localhost:4200/response-password-reset?token%3DQ2xWju0783aOa5Jj3FFoi7IcO4KGQBsYn5HQVLi9&amp;source=gmail&amp;ust=1656249651433000&amp;usg=AOvVaw2I2PAlD3SNvn1AzN0B00V_">Button Text</a>
